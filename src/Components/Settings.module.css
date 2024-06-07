@@ -1,0 +1,151 @@
+.light .option-text {
+    color: #551a8b;
+}
+
+.dim .option-text {
+    color: #ffffff;
+}
+
+.dark .option-text {
+    color: #ffffff;
+}
+
+.primary .option-text {
+    transition: none;
+    color: var(--primary-color);
+}
+
+.yellow .option-text {
+    transition: none;
+    color: var(--yellow-color);
+}
+
+.red .option-text {
+    transition: none;
+    color: var(--red-color);
+}
+
+.green .option-text {
+    transition: none;
+    color: var(--green-color);
+}
+
+.blue .option-text {
+    transition: none;
+    color: var(--blue-color);
+}
+
+.option-text {
+    font-weight: 400;
+}
+
+.accordion {
+    margin-top: 2rem;
+}
+
+.accordion-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.accordion-label.light {
+    color: #551a8b;
+}
+
+.accordion-label.dim {
+    color: #ffffff;
+}
+
+.accordion-label.dark {
+    color: #ffffff;
+}
+
+.accordion-label.primary {
+    color: var(--primary-color);
+}
+
+.accordion-label.yellow {
+    color: var(--yellow-color);
+}
+
+.accordion-label.red {
+    color: var(--red-color);
+}
+
+.accordion-label.green {
+    color: var(--green-color);
+}
+
+.accordion-label.blue {
+    color: var(--blue-color);
+}
+
+.accordion-text {
+    margin-top: 0;
+    max-height: 0;
+    overflow: hidden;
+    line-height: 25px;
+    transition: all 500ms linear;
+}
+
+.accordion-text.light {
+    color: #000000;
+}
+
+.accordion-text.dim, .accordion-text.dark {
+    color: #ffffff;
+}
+
+.accordion-text.open {
+    margin-top: 0.75rem;
+    max-height: 200px;
+}
+
+.primary {
+    color: var(--primary-color);
+}
+
+.yellow {
+    color: var(--yellow-color);
+}
+
+.red {
+    color: var(--red-color);
+}
+
+.green {
+    color: var(--green-color);
+}
+
+.blue {
+    color: var(--blue-color);
+}
+
+@media only screen and (max-width : 1200px) {
+    .accordion-text.open {
+        max-height: 250px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .accordion-text.open {
+        max-height: 300px;
+    }
+}
+
+@media only screen and (max-width : 575px) {
+    .accordion-text.open {
+        max-height: 825px;
+    }
+
+    .option-text, .accordion-label {
+        font-size: 14px;
+    }
+
+    .accordion-text {
+        font-size: 14px;
+    }
+}

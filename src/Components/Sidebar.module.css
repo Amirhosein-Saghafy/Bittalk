@@ -1,0 +1,172 @@
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.username-text {
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.username-text.primary {
+    color: var(--primary-color);
+}
+
+.username-text.yellow {
+    color: var(--yellow-color);
+}
+
+.username-text.red {
+    color: var(--red-color);
+}
+
+.username-text.green {
+    color: var(--green-color);
+}
+
+.username-text.blue {
+    color: var(--blue-color);
+}
+
+.user-id {
+    color: lightslategray;
+}
+
+.options-list {
+    padding-left: 0.75rem;
+    margin: 2rem 0;
+}
+
+.create-post {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 3rem;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+.create-post.primary {
+    background-color: var(--primary-color);
+}
+
+.create-post.yellow {
+    background-color: var(--yellow-color);
+}
+
+.create-post.red {
+    background-color: var(--red-color);
+}
+
+.create-post.green {
+    background-color: var(--green-color);
+}
+
+.create-post.blue {
+    background-color: var(--blue-color);
+}
+
+.create-post:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .user-section {
+        flex-direction: column;
+    }
+
+    .username {
+        margin-left: 0;
+        margin-top: 0.75rem;
+        text-align: center;
+    }
+
+    .username-text {
+        font-size: 14px;
+    }
+
+    .user-id {
+        font-size: 14px;
+    }
+
+    .user-image {
+        width: 45px;
+        height: 45px;
+    }
+
+    .options-list {
+        padding: 0;
+    }
+
+    .create-post {
+        padding: 1rem 1.5rem;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .username-text {
+        font-size: 16px;
+    }
+
+    .user-id {
+        font-size: 16px;
+    }
+
+    .user-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .options-list {
+        padding: 0.75rem;
+    }
+
+    .create-post {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .user-section {
+        display: none;
+    }
+
+    .user-image {
+        width: 42px;
+        height: 42px;
+    }
+
+    .username {
+        display: none;
+    }
+
+    .options-list {
+        margin: 0;
+        width: max-content;
+    }
+
+    .create-post {
+        display: none;
+    }
+}

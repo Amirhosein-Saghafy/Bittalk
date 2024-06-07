@@ -1,0 +1,188 @@
+.background-layer {
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 10;
+}
+
+.background-layer.light {
+    background-color: rgba(241, 239, 246, 0.85);
+}
+
+.background-layer.dim {
+    background-color: rgba(30, 24, 48, 0.85);
+}
+
+.background-layer.dark {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.25rem;
+    border-radius: 12px;
+}
+
+.modal.light {
+    background-color: var(--light-background-color);
+}
+
+.modal.dim {
+    background-color: var(--dim-background-color);
+}
+
+.modal.dark {
+    background-color: var(--dark-background-color);
+}
+
+.modal-header {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.modal-title.light {
+    color: gray;
+}
+
+.modal-title.dim {
+    color: #ffffff;
+}
+
+.modal-title.dark {
+    color: #ffffff;
+}
+
+.modal-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.modal-icon {
+    font-size: 44px;
+}
+
+.modal-icon.green {
+    color: rgb(96, 238, 96);
+}
+
+.modal-icon.red {
+    color: rgb(254, 74, 74);
+}
+
+.modal-icon.yellow{
+    color: rgb(244, 244, 17);
+}
+
+.modal-icon.blue {
+    color: lightskyblue;
+}
+
+.modal-text {
+    margin-top: 0.75rem;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 265px;
+    text-align: center;
+}
+
+.modal-text.light {
+    color: gray;
+}
+
+.modal-text.dim {
+    color: #ffffff;
+}
+
+.modal-text.dark {
+    color: #ffffff;
+}
+
+.modal-footer {
+    width: 100%;
+    text-align: right;
+}
+
+.modal-button {
+    width: 80px;
+    color: #fff;
+    padding: 12px 25px;
+    font-weight: 500;
+    font-size: 13px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-button.primary {
+    background-color: var(--primary-color);
+}
+
+.modal-button.yellow {
+    background-color: var(--yellow-color);
+}
+
+.modal-button.red {
+    background-color: var(--red-color);
+}
+
+.modal-button.green {
+    background-color: var(--green-color);
+}
+
+.modal-button.blue {
+    background-color: var(--blue-color);
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .modal {
+        width: 400px;
+    }
+
+    .modal-header {
+        margin-bottom: 1rem;
+    }
+
+    .modal-body {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .modal {
+        width: 240px;
+    }
+
+    .modal-title {
+        font-size: 16px;
+    }
+
+    .modal-icon {
+        font-size: 38px;
+    }
+
+    .modal-text {
+        font-size: 14px;
+    }
+
+    .modal-button {
+        width: 65px;
+        padding: 10px 0px;
+        font-size: 12px;
+    }
+}

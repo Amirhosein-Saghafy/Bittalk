@@ -1,0 +1,283 @@
+.user-information {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.user-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-details {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.username.primary {
+    color: var(--primary-color);
+}
+
+.username.yellow {
+    color: var(--yellow-color);
+}
+
+.username.red {
+    color: var(--red-color);
+}
+
+.username.green {
+    color: var(--green-color);
+}
+
+.username.blue {
+    color: var(--blue-color);
+}
+
+.edit-button, .connect-button, .connected-button {
+    width: 90px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.edit-button:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.connect-button {
+    color: #fff;
+}
+
+.connect-button.primary {
+    background-color: var(--primary-color);
+}
+
+.connect-button.yellow {
+    background-color: var(--yellow-color);
+}
+
+.connect-button.red {
+    background-color: var(--red-color);
+}
+
+.connect-button.green {
+    background-color: var(--green-color);
+}
+
+.connect-button.blue {
+    background-color: var(--blue-color);
+}
+
+.connected-button {
+    background-color: lightgray;
+    color: #000;
+}
+
+.connected-button:hover {
+    background-color: gray;
+}
+
+.follow-icon {
+    margin-left: 0.25rem;
+}
+
+.user-statistics {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.user-statistic {
+    margin-right: 1rem;
+    color: rgb(121, 121, 121);
+}
+
+.statistic-value {
+    margin-right: 0.25rem;
+    font-weight: 500;
+}
+
+.statistic-value.light {
+    color: #551a8b;
+}
+
+.statistic-value.dim {
+    color: #ffffff;
+}
+
+.statistic-value.dark {
+    color: #ffffff;
+}
+
+.statistic-name {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.user-bio {
+    color: rgb(121, 121, 121);
+    margin-top: 1rem;
+}
+
+.user-posts {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 2rem;
+}
+
+.user-posts .title {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.title h3 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.title .light {
+    color: #551a8b;
+}
+
+.title .dim {
+    color: #ffffff;
+}
+
+.title .dark {
+    color: #ffffff;
+}
+
+.loader {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.loader-spinner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: rotate-spinner 750ms linear 0s infinite normal forwards;
+}
+
+.loader-spinner.primary {
+    border: 2px solid var(--primary-color);
+    border-bottom-color: transparent;
+}
+
+.loader-spinner.yellow {
+    border: 2px solid var(--yellow-color);
+    border-bottom-color: transparent;
+}
+
+.loader-spinner.red {
+    border: 2px solid var(--red-color);
+    border-bottom-color: transparent;
+}
+
+.loader-spinner.green {
+    border: 2px solid var(--green-color);
+    border-bottom-color: transparent;
+}
+
+.loader-spinner.blue {
+    border: 2px solid var(--blue-color);
+    border-bottom-color: transparent;
+}
+
+@keyframes rotate-spinner {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.light {
+    color: #000000;
+}
+
+.dim, .dark {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 992px) {
+    .user-photo {
+        width: 82px;
+        height: 82px;
+    }
+
+    .user-statistics {
+        margin: 0.75rem 0 0.5rem 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .user-information {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .user-details {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .heading{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .user-statistics{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .user-statistic{
+        margin-bottom: 0.25rem;
+    }
+
+    .username{
+        margin-bottom: 0.5rem;
+    }
+
+    .edit-button{
+        margin-bottom: 0.5rem;
+    }
+
+    .user-bio p{
+        text-align: center;
+        line-height: 25px;
+    }
+}

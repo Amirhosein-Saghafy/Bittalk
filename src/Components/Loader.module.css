@@ -1,0 +1,76 @@
+.background-layer {
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 10;
+}
+
+.background-layer.light {
+    background-color: rgba(241, 239, 246, 0.85);
+}
+
+.background-layer.dim {
+    background-color: rgba(30, 24, 48, 0.85);
+}
+
+.background-layer.dark {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.svg {
+    width: 75px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.path {
+    --total-length: 136px;
+    stroke-linecap: round;
+    stroke-width: 6;
+    fill: none;
+    stroke-dasharray: var(--total-length) var(--total-length);
+    animation: animate 2s linear infinite;
+}
+
+.path.primary {
+    stroke: var(--primary-color);
+}
+
+.path.yellow {
+    stroke: var(--yellow-color);
+}
+
+.path.red {
+    stroke: var(--red-color);
+}
+
+.path.green {
+    stroke: var(--green-color);
+}
+
+.path.blue {
+    stroke: var(--blue-color);
+}
+
+@keyframes animate {
+    0% {
+        stroke-dashoffset: calc(-1 * var(--total-length));
+    }
+
+    30%, 50% {
+        stroke-dashoffset: 0;
+    }
+
+    80%, 100% {
+        stroke-dashoffset: var(--total-length);
+    }
+}
+
+@media only screen and (max-width: 575px)
+{
+    .svg {
+        width: 55px;
+    }
+}

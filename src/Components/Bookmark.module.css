@@ -1,0 +1,70 @@
+.light {
+    color: #000000;
+}
+
+.dim, .dark {
+    color: #ffffff;
+}
+
+.loader {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.loader-spinner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: rotate-spinner 750ms linear 0s infinite normal forwards;
+}
+
+.loader-spinner.primary {
+    border: 2px solid var(--primary-color);
+    border-bottom-color: transparent;
+}
+
+.loader-spinner.yellow {
+    border: 2px solid var(--yellow-color);
+    border-bottom-color: transparent;
+}
+
+.loader-spinner.red {
+    border: 2px solid var(--red-color);
+    border-bottom-color: transparent;
+}
+
+.loader-spinner.green {
+    border: 2px solid var(--green-color);
+    border-bottom-color: transparent;
+}
+
+.loader-spinner.blue {
+    border: 2px solid var(--blue-color);
+    border-bottom-color: transparent;
+}
+
+.message {
+    text-align: center;
+}
+
+
+@keyframes rotate-spinner {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .message {
+        font-size: 12px;
+    }
+}

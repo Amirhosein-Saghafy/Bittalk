@@ -1,0 +1,13 @@
+:root{
+    --primary-color: hsl(257.02deg, 61.47%, 54.63%);
+    --yellow-color: hsl(52, 100%, 60%);
+    --red-color: hsl(352, 75%, 60%);
+    --green-color: hsl(152, 75%, 60%);
+    --blue-color: hsl(202, 75%, 60%);
+    --light-background-color: #ffffff;
+    --light-main-background-color: #f0edf5;
+    --dim-background-color: #292242;
+    --dim-main-background-color: #1f1831;
+    --dark-background-color: #151120;
+    --dark-main-background-color: #000000;
+}

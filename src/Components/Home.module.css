@@ -1,0 +1,89 @@
+.content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 560px;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.content::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: lightgray;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+    width: 100%;
+}
+
+.loader-spinner {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #5c35c1;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: rotate-spinner 750ms linear 0s infinite normal forwards;
+}
+
+.loader-spinner.primary {
+    border: 2px solid var(--primary-color);
+    border-bottom-color: transparent;
+}
+
+.loader-spinner.yellow {
+    border: 2px solid var(--yellow-color);
+    border-bottom-color: transparent;
+}
+
+.loader-spinner.red {
+    border: 2px solid var(--red-color);
+    border-bottom-color: transparent;
+}
+
+.loader-spinner.green {
+    border: 2px solid var(--green-color);
+    border-bottom-color: transparent;
+}
+
+.loader-spinner.blue {
+    border: 2px solid var(--blue-color);
+    border-bottom-color: transparent;
+}
+
+@keyframes rotate-spinner {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.light {
+    color: #000000;
+}
+
+.dim, .dark {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .content{
+        max-height: 600px;
+    }
+}

@@ -1,0 +1,5 @@
+const PROJECT_URL = 'https://imnkxuxetiewmyrcvsbz.supabase.co';
+
+const PROJECT_API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imltbmt4dXhldGlld215cmN2c2J6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODk1ODE2ODMsImV4cCI6MjAwNTE1NzY4M30.uxHvfvThuoD2BITfdd3fqmxQoHrP6PWcObc5NF8bwrg';
+
+export {PROJECT_URL, PROJECT_API_KEY};

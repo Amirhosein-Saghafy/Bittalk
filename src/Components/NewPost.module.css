@@ -1,0 +1,85 @@
+.form {
+    width: 100%;
+}
+
+.text-box {
+    width: 100%;
+    height: 250px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+.text-box.light {
+    background-color: var(--light-main-background-color);
+}
+
+.text-box.dim {
+    background-color: var(--dim-main-background-color);
+    color: #ffffff;
+}
+
+.text-box.dark {
+    background-color: var(--dark-main-background-color);
+    color: #ffffff;
+}
+
+.text-box::placeholder {
+    color: #a8a4b1;
+    font-weight: 500;
+}
+
+.button {
+    border: none;
+    width: 103px;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.post {
+    color: #fff;
+    margin-right: 0.75rem;
+}
+
+.post.primary {
+    background-color: var(--primary-color);
+}
+
+.post.yellow {
+    background-color: var(--yellow-color);
+}
+
+.post.red {
+    background-color: var(--red-color);
+}
+
+.post.green {
+    background-color: var(--green-color);
+}
+
+.post.blue {
+    background-color: var(--blue-color);
+}
+
+.cancle {
+    background-color: lightgray;
+    color: #3b3d35;
+}
+
+.cancle:hover {
+    background-color: rgb(195, 195, 195);
+}
+
+@media only screen and (max-width: 575px)
+{
+    .button{
+        width: 90px;
+        margin: 0 0.5rem 0.5rem 0;
+        padding: 12px;
+    }
+}

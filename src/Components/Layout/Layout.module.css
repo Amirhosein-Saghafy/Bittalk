@@ -1,0 +1,42 @@
+.main {
+    min-height: calc(100dvh - 65px);
+}
+
+.main.light {
+    background-color: var(--light-main-background-color);
+}
+
+.main.dim {
+    background-color: var(--dim-main-background-color);
+}
+
+.main.dark {
+    background-color: var(--dark-main-background-color);
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.notify-container {
+    width: 23.75%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .notify-container {
+        display: none;
+    }
+}

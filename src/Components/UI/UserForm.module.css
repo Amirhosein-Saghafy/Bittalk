@@ -1,0 +1,290 @@
+.title {
+    margin-bottom: 2rem;
+}
+
+.title-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.title-text.light {
+    color: #000000;
+}
+
+.title-text.dim {
+    color: #ffffff;
+}
+
+.title-text.dark {
+    color: #ffffff;
+}
+
+.user-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 2.25rem;
+}
+
+.w-50 {
+    width: 48.5%;
+}
+
+.input-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.form-label.primary {
+    color: var(--primary-color);
+}
+
+.form-label.yellow {
+    color: var(--yellow-color);
+}
+
+.form-label.red {
+    color: var(--red-color);
+}
+
+.form-label.green {
+    color: var(--green-color);
+}
+
+.form-label.blue {
+    color: var(--blue-color);
+}
+
+.form-input, select, textarea {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 5px 10px;
+    outline: none;
+    height: 30px;
+    background-color: transparent;
+}
+
+.form-input.light {
+    color: #000000;
+}
+
+.form-input.dim {
+    color: #ffffff;
+}
+
+.form-input.dim[type=date]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.form-input.dark {
+    color: #ffffff;
+}
+
+.form-input.dark[type=date]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.file-input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.25rem;
+}
+
+.profile-image {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.file-input {
+    width: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.password-input {
+    height: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.password-input input {
+    width: calc(100% - 27px);
+}
+
+.show-password-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.show-password-button.light {
+    color: #000000;
+}
+
+.show-password-button.dim {
+    color: #ffffff;
+}
+
+.show-password-button.dark {
+    color: #ffffff;
+}
+
+select {
+    width: 100%;
+    cursor: pointer;
+}
+
+select.light {
+    color: #000000;
+}
+
+select.dim {
+    color: #ffffff;
+}
+
+select.dim option {
+    color: #000000;
+}
+
+select.dark {
+    color: #ffffff;
+}
+
+select.dark option {
+    color: #000000;
+}
+
+select option {
+    margin: 1rem 0;
+}
+
+textarea {
+    resize: none;
+    height: unset;
+}
+
+textarea.light {
+    color: #000000;
+}
+
+textarea.dim {
+    color: #ffffff;
+}
+
+textarea.dark {
+    color: #ffffff;
+}
+
+textarea::placeholder {
+    font-weight: 500;
+    color: #a8a4b1;
+}
+
+.options {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.option-button {
+    width: 105px;
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.action {
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.action.primary {
+    background-color: var(--primary-color);
+}
+
+.action.yellow {
+    background-color: var(--yellow-color);
+}
+
+.action.red {
+    background-color: var(--red-color);
+}
+
+.action.green {
+    background-color: var(--green-color);
+}
+
+.action.blue {
+    background-color: var(--blue-color);
+}
+
+.cancle {
+    background-color: lightgray;
+    color: #3b3d35;
+    font-size: 13px;
+    text-align: center;
+}
+
+.cancle:hover {
+    background-color: rgb(195, 195, 195);
+}
+
+.required {
+    color: red;
+}
+
+@media only screen and (max-width: 575px) {
+    
+    .profile-image{
+        width: 100px;
+        height: 100px;
+    }    
+
+    .w-50 {
+        width: 100%;
+    }
+
+    .options{
+        flex-wrap: wrap-reverse;
+        margin-top: 1rem;
+    }
+
+    .option-button{
+        margin: 0.25rem;
+        width: 90px;
+        padding: 10px 0px;
+        font-size: 12px;
+    }
+
+    .title{
+        margin: 1rem 0;
+    }
+
+    .title-text{
+        font-size: 20px;
+    }
+}
